@@ -48,23 +48,6 @@ export default function Register() {
     },
   });
 
-  //   const handleSubmit = async (data: z.infer<typeof formSchema>) => {
-  //     setServerError(null);
-  //     const response = await registerUser({
-  //       email: data.email,
-  //       password: data.password,
-  //       passwordConfirm: data.passwordConfirm,
-  //     });
-
-  //     if (response.error) {
-  //       setServerError(response.message);
-  //     } else {
-  //       // Handle successful registration (e.g., show a success message or redirect)
-  //       router.push("/register/confirmation");
-  //       console.log(response.message);
-  //     }
-  //     console.log("hey: ", response);
-  //   };
   const handleSubmit = async (data: z.infer<typeof formSchema>) => {
     setServerError(null);
     setIsLoading(true); // Set loading to true when submission starts
