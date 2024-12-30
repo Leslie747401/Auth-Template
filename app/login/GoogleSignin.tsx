@@ -32,12 +32,9 @@ export default function GoogleSignin() {
       if (error) {
         throw error;
       }
-    } catch (error) {
-      toast({
-        title: "Please try again.",
-        description: "There was an error logging in with Google.",
-        variant: "destructive",
-      });
+    }
+
+    finally {
       setIsGoogleLoading(false);
     }
   }

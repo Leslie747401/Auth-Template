@@ -65,9 +65,9 @@ export default function Register() {
         // Redirect to the confirmation page
         router.push("/register/confirmation");
       }
-    } catch (error) {
-      setServerError("An unexpected error occurred. Please try again.");
-    } finally {
+    } 
+    
+    finally {
       setIsLoading(false); // Set loading to false when submission ends
     }
   };
