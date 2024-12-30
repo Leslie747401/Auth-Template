@@ -2,10 +2,8 @@
 
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
-
 import { createClient } from "@/utils/supabase/client";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
 import Image from "next/image";
 
